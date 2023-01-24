@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ba60df9-8cb6-4ac6-ae4f-bf27b5d45042" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Birds.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Birds.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Count.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Count.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Plus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Plus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Poem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Poem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Problems.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Problems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Simple.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/ca/bcit/comp1510/lab01/Simple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/bin/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Comp1510Lab01LiangK/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Comp1510Lab01LiangK/src/module-info.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2KlCBBIzOfEuohBW5Mrl8YfyY4a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/jeb/Desktop/CST/COMP-1510/Comp1510Lab03LiangK"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba60df9-8cb6-4ac6-ae4f-bf27b5d45042" name="Changes" comment="" />
+      <created>1674539644947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674539644947</updated>
+    </task>
+    <servers />
+  </component>
+</project>

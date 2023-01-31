@@ -7,13 +7,14 @@
     <copyLibs>true</copyLibs>
     <option name="thirdPartyClasspath" />
     <option name="activeLocationIds">
-      <option value="35e24ac8-2e63-40b4-8405-333242478631" />
+      <option value="b8ab9d37-f5cd-4c94-a090-2e10c478ca8e" />
     </option>
     <option name="locations">
       <list>
         <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
         <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
         <ConfigurationLocation id="35e24ac8-2e63-40b4-8405-333242478631" type="LOCAL_FILE" scope="All" description="Comp 1510 Checkstyle">$PROJECT_DIR$/../../../Comp1510Checkstyle.xml</ConfigurationLocation>
+        <ConfigurationLocation id="b8ab9d37-f5cd-4c94-a090-2e10c478ca8e" type="LOCAL_FILE" scope="All" description="cst">$PROJECT_DIR$/../examples/Comp1510Checkstyle.xml</ConfigurationLocation>
       </list>
     </option>
   </component>

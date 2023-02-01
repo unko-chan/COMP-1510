@@ -1,22 +1,53 @@
 package q2;
 
+import java.util.Scanner;
+
 /**
- * This is where you put your description about what this class does. You
- * don't have to write an essay but you should describe exactly what it does.
- * Describing it will help you to understand the programming problem better.
- *
- * @author Your Name goes here
+ * Calculates an approximation to the square root given an input.
+ * @author Kevin Liang
  * @version 1.0
  */
 public class Sqrt {
     /**
-     * This is the entry point that gets called to run the program.
+     * Drives the program.
      *
      * @param args unused.
      */
     public static void main(String[] args) {
-        // replace these two lines with your code
-        System.out.println("Question two was called and ran sucessfully.");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Input a double value: ");
+
+        double a = scan.nextDouble();
+
+        double estimate = (a + 1) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
+
+        estimate = (estimate + a / estimate) / 2;
+        System.out.println(estimate);
     }
 
 }

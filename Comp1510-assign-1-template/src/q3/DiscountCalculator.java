@@ -1,23 +1,37 @@
 package q3;
 
+import java.text.NumberFormat;
+import java.util.Scanner;
+
 /**
- * This is where you put your description about what this class does. You don't
- * have to write an essay but you should describe exactly what it does.
- * Describing it will help you to understand the programming problem better.
- *
- * @author Your Name goes here
+ * Calculates the discount for cheese club customers.
+ * @author Kevin Liang
  * @version 1.0
  */
 public class DiscountCalculator {
 
     /**
-     * This is the main method that runs the code.
+     * Drives the program.
      *
      * @param args command line arguments.
      */
     public static void main(String[] args) {
-        // Replace this and following with your code!!!
-        System.out.println("Question three was called and ran sucessfully.");
+        final double maxDiscount = 0.75;
+        final int convertPercent = 100;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Input number of cheeses purchased:");
+        int cheesesPurchased = scan.nextInt();
+
+        System.out.println("Input number of referrals:");
+        int referrals = scan.nextInt();
+
+        double sum = (double) (cheesesPurchased + referrals) / convertPercent;
+
+        double discount = Math.min(sum, maxDiscount);
+        NumberFormat percentage = NumberFormat.getPercentInstance();
+
+        System.out.println(discount);
+        System.out.println(percentage.format(discount));
     }
 
 }

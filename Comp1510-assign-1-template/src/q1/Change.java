@@ -55,11 +55,6 @@ public class Change {
     private static final int CONVERT = 100;
 
     /**
-     * Variable for current amount.
-     */
-    private static int currentAmount;
-
-    /**
      * Drives the program.
      * @param args unused.
      */
@@ -69,16 +64,33 @@ public class Change {
 
         double amount = scan.nextDouble();
 
-        currentAmount = (int) (amount * CONVERT);
+        /**
+         * Variable for current amount.
+         */
+        int currentAmount = (int) (amount * CONVERT);
 
-        int tens = calculateChange(TEN);
-        int fives = calculateChange(FIVE);
-        int toonies = calculateChange(TOONIE);
-        int loonies = calculateChange(LOONIE);
-        int quarters = calculateChange(QUARTER);
-        int dimes = calculateChange(DIME);
-        int nickels = calculateChange(NICKEL);
-        int pennies = calculateChange(PENNY);
+        int tens = currentAmount / TEN;
+        currentAmount = currentAmount - (tens * TEN);
+
+        int fives = currentAmount / FIVE;
+        currentAmount = currentAmount - (fives * FIVE);
+
+        int toonies = currentAmount / TOONIE;
+        currentAmount = currentAmount - (toonies * TOONIE);
+
+        int loonies = currentAmount / LOONIE;
+        currentAmount = currentAmount - (loonies * LOONIE);
+
+        int quarters = currentAmount / QUARTER;
+        currentAmount = currentAmount - (quarters * QUARTER);
+
+        int dimes = currentAmount / DIME;
+        currentAmount = currentAmount - (dimes * DIME);
+
+        int nickels = currentAmount / NICKEL;
+        currentAmount = currentAmount - (nickels * NICKEL);
+
+        int pennies = currentAmount;
 
         System.out.println(tens + " ten dollar bills");
         System.out.println(fives + " five dollar bills");
@@ -90,16 +102,4 @@ public class Change {
         System.out.println(pennies + " pennies");
     }
 
-    /**
-     * Takes in a currency type to calculate change and
-     * subtract from total amount left.
-     * @param type the type of change.
-     * @return the amount of change.
-     */
-    public static int calculateChange(int type) {
-        int change = currentAmount / type;
-        currentAmount = currentAmount - (change * type);
-
-        return change;
-    }
 }

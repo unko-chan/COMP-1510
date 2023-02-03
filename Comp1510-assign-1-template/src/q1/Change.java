@@ -3,70 +3,71 @@ package q1;
 import java.util.Scanner;
 
 /**
- * Takes an input and calculates change.
- * @author Kevin Liang
+ * Calculates the change given an amount of money.
+ * The class prompts the user for an amount of money and then calculates
+ * the number of 10 dollar bills, 5 dollar bills, toonies, loonies,
+ * quarters, dimes, nickels, and pennies that make up the change.
+ *
+ * @author Kevin Liang Set B
  * @version 1.0
  */
 
 public class Change {
+
     /**
-     * Value for ten dollar bills.
+     * The constant for the denomination of 10 dollars.
      */
     private static final int TEN = 1000;
 
     /**
-     * Value for five dollar bills.
+     * The constant for the denomination of 5 dollars.
      */
     private static final int FIVE = 500;
 
     /**
-     * Value for toonies.
+     * The constant for the denomination of 2 dollars.
      */
     private static final int TOONIE = 200;
 
     /**
-     * Value for loonies.
+     * The constant for the denomination of 1 dollar.
      */
     private static final int LOONIE = 100;
 
     /**
-     * Value for quarters.
+     * The constant for the denomination of 25 cents.
      */
     private static final int QUARTER = 25;
 
     /**
-     * Value for dimes.
+     * The constant for the denomination of 10 cents.
      */
     private static final int DIME = 10;
 
     /**
-     * Value for nickels.
+     * The constant for the denomination of 5 cents.
      */
     private static final int NICKEL = 5;
 
     /**
-     * Value for pennies.
-     */
-    private static final int PENNY = 1;
-
-    /**
-     * Value for converting to cents.
+     * The constant for converting from double to int.
      */
     private static final int CONVERT = 100;
 
+
     /**
-     * Drives the program.
+     * Drives the program by prompting the user for an amount of money,
+     * calculating the change, and printing out the number of bills and coins.
+     *
      * @param args unused.
      */
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         System.out.println("Enter an amount of money:");
 
         double amount = scan.nextDouble();
-
-        /**
-         * Variable for current amount.
-         */
         int currentAmount = (int) (amount * CONVERT);
 
         int tens = currentAmount / TEN;

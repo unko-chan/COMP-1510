@@ -1,28 +1,24 @@
-[Student Name], [Student ID], [Set], [Date]
+Kevin Liang, A01353636, B, 2023-02-02
 
-This assignment is [enter percent]% complete.
+This assignment is 100% complete.
 
 
 ------------------------
 Question one (Change) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+complete
 
 ------------------------
 Question two (Sqrt) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+complete
 
 ------------------------
 Question three (DiscountCalculator) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+complete
 
 ------------------------
 Question four (Pack) status:
 
-[complete or not complete]
-[explanation if not complete, what is working/not working]
+complete

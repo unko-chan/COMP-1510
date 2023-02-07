@@ -7,6 +7,14 @@ public class Student {
     private String studentNumber;
     private int gradeAverage;
 
+    /**
+     * Constructs a Student object.
+     * @param firstName first name
+     * @param lastName last name
+     * @param birthYear birth year
+     * @param studentNumber student number
+     * @param gradeAverage grade average
+     */
     public Student(String firstName, String lastName, int birthYear,
                    String studentNumber, int gradeAverage) {
         this.firstName = firstName;
@@ -16,6 +24,10 @@ public class Student {
         this.gradeAverage = gradeAverage;
     }
 
+    /**
+     * Sets the first name.
+     * @param firstName the first name to set
+     */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

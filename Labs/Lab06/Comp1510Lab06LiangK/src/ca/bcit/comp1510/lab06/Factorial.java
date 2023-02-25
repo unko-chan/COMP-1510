@@ -1,3 +1,5 @@
+package ca.bcit.comp1510.lab06;
+
 import java.util.Scanner;
 
 public class Factorial {
@@ -11,7 +13,7 @@ public class Factorial {
         input = readInt(scan);
 
         if (input == 0) {
-            System.out.println("Factorial: " + factorial);
+            System.out.println("ca.bcit.comp1510.lab06.Factorial: " + factorial);
             return;
         }
 
@@ -20,7 +22,7 @@ public class Factorial {
             input--;
         }
 
-        System.out.println("Factorial: " + factorial);
+        System.out.println("ca.bcit.comp1510.lab06.Factorial: " + factorial);
     }
 
     public static int readInt(Scanner scan) {

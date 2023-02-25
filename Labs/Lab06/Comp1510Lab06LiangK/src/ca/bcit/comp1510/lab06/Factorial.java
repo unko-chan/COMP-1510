@@ -2,8 +2,19 @@ package ca.bcit.comp1510.lab06;
 
 import java.util.Scanner;
 
+/**
+ * The Factorial class.
+ *
+ * @author Kevin Liang
+ * @version 2023
+ */
 public class Factorial {
 
+    /**
+     * Drives the program.
+     *
+     * @param args unused
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int input;
@@ -13,7 +24,8 @@ public class Factorial {
         input = readInt(scan);
 
         if (input == 0) {
-            System.out.println("ca.bcit.comp1510.lab06.Factorial: " + factorial);
+            System.out.println("ca.bcit.comp1510.lab06.Factorial: "
+                    + factorial);
             return;
         }
 
@@ -25,6 +37,12 @@ public class Factorial {
         System.out.println("ca.bcit.comp1510.lab06.Factorial: " + factorial);
     }
 
+    /**
+     * Reads an integer from the user.
+     *
+     * @param scan the scanner object.
+     * @return the integer.
+     */
     public static int readInt(Scanner scan) {
         int userInput = -1;
         boolean validInput = false;
@@ -41,7 +59,7 @@ public class Factorial {
             } else {
                 System.out.println("Input must be an integer. "
                         + "Please try again.");
-                scan.next(); // clear the invalid input from scanner
+                scan.next();
             }
         }
         return userInput;

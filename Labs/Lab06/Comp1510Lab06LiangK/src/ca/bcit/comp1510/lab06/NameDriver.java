@@ -1,12 +1,17 @@
 package ca.bcit.comp1510.lab06;
 
+/**
+ * The NameDriver class.
+ *
+ * @author Kevin Liang
+ * @version 2023
+ */
 public class NameDriver {
-    /*
-    You can do this by creating some Names and printing their toStrings.
-    Create correct names and names that use white space or empty Strings for their components.
-    Mutate them, too.
-     */
 
+    /**
+     * Drives the program.
+     * @param args unused
+     */
     public static void main(String[] args) {
         Name name = new Name("kevin", "middle", "liang");
         Name whiteSpacedName = new Name("  white  ", "  space  ", "  in-name  ");

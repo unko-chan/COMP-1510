@@ -1,5 +1,6 @@
 package ca.bcit.comp1510.lab08;
 
+import java.util.Objects;
 import java.util.Scanner;
 import java.util.Random;
 /**
@@ -45,6 +46,7 @@ public class Games {
                     guessANumber();
                     break;
                 case 3:
+                    rockPaperScissors();
                     break;
                 case 4:
                     gameState = false;
@@ -90,8 +92,9 @@ public class Games {
 
     public void rockPaperScissors() {
         int number = random.nextInt(3);
-        String randomChoice;
-        String userChoice
+        scanner.nextLine();
+        String randomChoice = null;
+        String userChoice = null;
         boolean choiceInput = true;
 
         switch (number) {
@@ -109,11 +112,39 @@ public class Games {
         System.out.println("I've picked one of ROCK, PAPER, and SCISSORS");
         System.out.println("Which one do you choose?");
         System.out.print("> ");
-        while (choiceInput) {
-            userChoice = scanner.nextLine();
-            String userInput = userChoice.trim().toUpperCase();
 
-            if (userInput)
+        while (choiceInput) {
+            String userInput = scanner.nextLine();
+
+            if (userInput.equals("rock") || userInput.equals("paper") || userInput.equals("scissors")) {
+                userChoice = userInput;
+                choiceInput = false;
+            } else {
+                System.out.println("That's not a valid choice! Try again!");
+            }
+        }
+
+        if (userChoice.equals(randomChoice.toLowerCase())) {
+            System.out.println("It's a tie!");
+        } else if ((userChoice.equals("rock") && randomChoice.equals("Scissors")) ||
+                (userChoice.equals("scissors") && randomChoice.equals("Paper")) ||
+                (userChoice.equals("paper") && randomChoice.equals("Rock"))) {
+            System.out.print("Yes! ");
+            if (userChoice.equals("rock")) {
+                System.out.println("A rock smashes scissors");
+            }
+            if (userChoice.equals("scissors")) {
+                System.out.println("Scissors cut paper");
+            }
+            if (userChoice.equals("paper")) {
+                System.out.println("Paper wraps rock");
+            }
+            System.out.println("Five points!");
+            score += 5;
+        } else {
+            System.out.println("Nope, I picked " + randomChoice);
+            System.out.println("Lost three points!");
+            score -= 3;
         }
     }
 }

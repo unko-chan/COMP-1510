@@ -1,63 +1,83 @@
 package q3;
 
 import java.util.ArrayList;
-import java.lang.Math;
 import java.util.Scanner;
 
 /**
- * <p>This is where you put your description about what this class does. You
- * don't have to write an essay but you should describe exactly what it does.
- * Describing it will help you to understand the programming problem better.</p>
+ * The Primes class calculates all the primes up to a given number.
  *
- * @author Your Name goes here
- * @version 1.0
+ * @author Kevin Liang
+ * @version 2023
  */
 public class Primes {
 
-    private static final ArrayList<Boolean> primes = new ArrayList<Boolean>();
+    /**
+     *  Boolean array to store the primes.
+     */
+    private static final ArrayList<Boolean> PRIMES = new ArrayList<Boolean>();
 
-    public Primes(int N) {
-        for (int i = 0; i <= N; i++) {
-            primes.add(true);
+    /**
+     * Takes in a number N and calculates all the primes up to N.
+     * @param n the number to calculate primes up to.
+     */
+    public Primes(int n) {
+        for (int i = 0; i <= n; i++) {
+            PRIMES.add(true);
         }
         calculatePrimes(N);
     }
 
-    private void calculatePrimes(int N) {
-        primes.set(0, false);
-        primes.set(1, false);
-        int max = (int) Math.sqrt(N);
-        for (int i = 2; i <= max; i++){
-           if (primes.get(i)) {
-                for (int j = i; j * i <= N; j++) {
+    /**
+     * Calculates the primes.
+     * @param n the number to calculate primes up to.
+     */
+    private void calculatePrimes(int n) {
+        PRIMES.set(0, false);
+        PRIMES.set(1, false);
+        int max = (int) Math.sqrt(n);
+        for (int i = 2; i <= max; i++) {
+            if (PRIMES.get(i)) {
+                for (int j = i; j * i <= n; j++) {
                     int composite = j * i;
-                    primes.set(composite, false);
+                    PRIMES.set(composite, false);
                 }
             }
         }
     }
 
+    /**
+     * Prints the primes.
+     */
     public static void printPrimes() {
-        for (int i = 2; i <= primes.size() -1; i++) {
-            if (primes.get(i)) {
+        for (int i = 2; i <= PRIMES.size() - 1; i++) {
+            if (PRIMES.get(i)) {
                 System.out.print(i + " ");
             }
         }
     }
 
+    /**
+     * Counts the number of primes.
+     * @return the number of primes.
+     */
     public static int countPrimes() {
         int count = 0;
-        for (int i = 2; i <= primes.size() - 1; i++) {
-            if (primes.get(i)) {
+        for (int i = 2; i <= PRIMES.size() - 1; i++) {
+            if (PRIMES.get(i)) {
                 count++;
             }
         }
         return count;
     }
 
+    /**
+     * Checks if a number is prime.
+     * @param x the number to check.
+     * @return true if the number is prime, false otherwise.
+     */
     public static boolean isPrime(int x) {
-        if (x <= primes.size() - 1){
-            return primes.get(x);
+        if (x <= PRIMES.size() - 1) {
+            return PRIMES.get(x);
         } else {
             return false;
         }
@@ -72,12 +92,14 @@ public class Primes {
         Scanner scan = new Scanner(System.in);
         int input = 0;
         boolean awaitInput = true;
-        System.out.println("This program uses the sieve of Eratosthenes to determine which numbers are prime.");
+        System.out.println("This program uses the sieve of Eratosthenes "
+                + "to determine which numbers are prime.");
 
         do {
             System.out.println("Enter an upper bound:");
             while (!scan.hasNextInt()) {
-                System.out.println("Invalid input. Enter an integer greater than 1:");
+                System.out.println("Invalid input. "
+                        + "Enter an integer greater than 1:");
                 scan.nextLine();
             }
             input = scan.nextInt();
@@ -88,7 +110,8 @@ public class Primes {
 
         System.out.println("There are " + countPrimes() + " primes");
 
-        System.out.println("The prime numbers between 0 and " + input + " are:");
+        System.out.println("The prime numbers between 0 and "
+                + input + " are:");
 
         printPrimes();
     }
